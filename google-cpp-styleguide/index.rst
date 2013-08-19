@@ -17,6 +17,10 @@
 
         `YuleFox <http://www.yulefox.com>`_
         `brantyoung <http://yangyubo.com>`_
+:修改:
+    .. line-block::
+
+        `zycet <zycet@126.com>`_
 
 :项目主页:
     - `Google Style Guide <http://google-styleguide.googlecode.com>`_
@@ -49,8 +53,12 @@ Google 经常会发布一些开源项目, 意味着会接受来自其他代码�
 
     - 2008-07 1.0 : 出自 `YuleFox 的 Blog <http://www.yulefox.com/?p=207>`_, 很多地方摘录的也是该版本.
 
+0.2 修改说明
+---------------
 
-0.2 背景
+
+
+0.3 背景
 ---------------
 
 C++ 是 Google 大部分开源项目的主要编程语言. 正如每个 C++ 程序员都知道的, C++ 有很多强大的特性, 但这种强大不可避免的导致它走向复杂，使代码更容易产生 bug, 难以阅读和维护.
