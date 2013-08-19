@@ -13,6 +13,6 @@ Google 开源项目风格指南 (中文版,ITR组内修改版)
 
     此文档用于ITR组内部C++项目开发用，所有C++相关编码均须按照此文档要求执行。
 
-    如有任何疑问请与文档编写者联系 `zycet <zycet@126.com>`_。 
+    如有任何疑问请与文档编写者联系 `zycet <zycet@126.com>`_ 。
 
     项目采用 reStructuredText 纯文本标记语法, 并使用 Sphinx 生成 HTML / CHM / PDF 等文档格式。
