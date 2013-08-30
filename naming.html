@@ -1,0 +1,478 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>naming</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: 29d1c5bc36da364ad5aa86946d420b7bbc54a253 */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>命名约定</h1>
+<ul>
+<li>最重要的一致性规则是命名管理. 合理的命名风格可令阅读者快速获知名字代表是什么东东: 类型? 变量? 函数? 常量? 宏 ... ? 甚至不需要去查找类型声明. 使我们大脑中的模式匹配引擎可以非常可靠的处理这些命名规则.</li>
+<li>命名规则具有一定随意性, 但相比按个人喜好命名, 一致性更重,所以不管你怎么想, 规则总归是规则.</li>
+</ul>
+<h2>通用命名规则</h2>
+<pre><code>函数命名, 变量命名, 文件命名应具备描述性.
+不要过度缩写.类型和变量应该是名词, 函数名可以用 &quot;命令性&quot; 动词.
+</code></pre>
+
+<ul>
+<li>
+<p>如何命名:</p>
+<p>尽可能给出描述性的名称. 不要节约行空间, 让别人很快理解你的代码更重要. 好的命名风格:</p>
+<pre><code>int num_errors;                  // Good.
+int num_completed_connections;   // Good.
+</code></pre>
+
+<p>糟糕的命名使用含糊的缩写或随意的字符:</p>
+<pre><code>int n;                           // Bad - meaningless.
+int nerr;                        // Bad - ambiguous abbreviation.
+int n_comp_conns;                // Bad - ambiguous abbreviation.
+</code></pre>
+
+<p>类型和变量名一般为名词: 如 <code>FileOpener</code>, <code>num_errors</code>.
+函数名通常是指令性的 (确切的说它们应该是命令), 如 <code>OpenFile()</code>,<code>set_num_errors()</code>.</p>
+</li>
+<li>
+<p>缩写:</p>
+<p>除非该缩写在其它地方都非常普遍, 否则不要使用. 例如:</p>
+<pre><code>// Good
+// These show proper names with no abbreviations.
+int num_dns_connections;  // 大部分人都知道 &quot;DNS&quot; 是啥意思.
+int price_count_reader;   // OK, price count. 有意义.
+
+//Bad
+//Abbreviations can be confusing or ambiguous outside a small group. 
+int wgc_connections; // Only your group knows what this stands for.
+int pc\_reader; // Lots of things can be abbreviated &quot;pc&quot;.
+</code></pre>
+
+<p>永远不要用省略字母的缩写:</p>
+<pre><code>int error_count;  // Good.
+int error_cnt;    // Bad.
+</code></pre>
+
+</li>
+</ul>
+<h2>文件命名</h2>
+<hr />
+<ul>
+<li>
+<p>文件名要全部小写, 可以包含下划线 (<code>_</code>) .例如:</p>
+<pre><code>my_useful_class.cc
+my-useful-class.cc
+myusefulclass.cc
+</code></pre>
+
+</li>
+<li>C++ 文件要以 <code>.cc</code> 结尾, 头文件以 <code>.h</code> 结尾.</li>
+<li>不要使用已经存在于 <code>/usr/include</code> 下的文件名 (yospaly 注:即编译器搜索系统头文件的路径), 如 <code>db.h</code>.</li>
+<li>通常应尽量让文件名更加明确. <code>http_server_logs.h</code> 就比 <code>logs.h</code> 要好.</li>
+<li>定义类时文件名一般成对出现, 如 <code>foo_bar.h</code> 和 <code>foo_bar.cc</code>, 对应于类<code>FooBar</code>.</li>
+</ul>
+<h2>类型命名</h2>
+<hr />
+<ul>
+<li>类型名称的每个单词首字母均大写, 不包含下划线: <code>MyExcitingClass</code> , <code>MyExcitingEnum</code> .</li>
+<li>
+<p>所有类型命名 —— 类, 结构体, 类型定义 (<code>typedef</code>), 枚举 —— 均使用相同约定. 例如:</p>
+<pre><code>// classes and structs
+class UrlTable { ...
+class UrlTableTester { ...
+struct UrlTableProperties { ...
+
+// typedefs
+typedef hash_map&lt;UrlTableProperties *, string&gt; PropertiesMap;
+
+// enums
+enum UrlTableErrors { ...
+</code></pre>
+
+</li>
+</ul>
+<h2>变量命名</h2>
+<ul>
+<li>
+<p>变量名一律小写, 单词之间用下划线连接, 如:</p>
+<pre><code>my_exciting_local_variable
+my_exciting_member_variable
+</code></pre>
+
+</li>
+<li>
+<p>普通变量命名:</p>
+<pre><code>string table_name;  // OK - uses underscore.
+string tablename;   // OK - all lowercase.
+string tableName;   // Bad - mixed case.
+</code></pre>
+
+</li>
+<li>
+<p>结构体变量:</p>
+<p>结构体的数据成员可以和普通变量一样, 不用像类那样接下划线:</p>
+<pre><code>struct UrlTableProperties 
+{
+    string name;
+    int num_entries;
+}
+</code></pre>
+
+</li>
+<li>
+<p>全局变量:
+	对全局变量没有特别要求, 少用就好, 但如果你要用, 可以用 <code>g_</code> 或其它标志作为前缀, 以便更好的区分局部变量.</p>
+</li>
+</ul>
+<h2>常量命名</h2>
+<ul>
+<li>
+<p>在名称前加 <code>k</code>, 其后单词首字母大写</p>
+<pre><code>const int kDaysInAWeek = 7;
+</code></pre>
+
+</li>
+</ul>
+<h2>函数命名</h2>
+<ul>
+<li>
+<p>常规函数使用大小写混合, 取值和设值函数则要求与变量名匹配:</p>
+<pre><code>MyExcitingFunction()
+MyExcitingMethod()
+getMy_exciting_member_variable()
+setMy_exciting_member_variable()
+</code></pre>
+
+</li>
+<li>
+<p>常规函数:</p>
+<p>函数名的每个单词首字母大写, 没有下划线:</p>
+<pre><code>AddTableEntry()
+DeleteUrl()
+</code></pre>
+
+</li>
+<li>
+<p>取值和设值函数:</p>
+<p>取值和设值函数要与存取的变量名匹配. 这儿摘录一个类, <code>num_entries_</code> 是该类的实例变量:</p>
+<pre><code>class MyClass
+{
+    public:
+        int getNum_entries() const { return num_entries_; }
+        void setNum_entries(int num_entries) { num_entries_ = num_entries; }
+
+    private:
+        int num_entries_;
+};
+</code></pre>
+
+<p>其它非常短小的内联函数名也可以用小写字母, 例如.
+如果你在循环中调用这样的函数甚至都不用缓存其返回值,
+小写命名就可以接受.</p>
+</li>
+</ul>
+<h2>命名空间命名</h2>
+<ul>
+<li>名字空间用小写字母命名, 并基于项目名称和目录结构:<code>google_awesome_project</code>.</li>
+<li>关于名字空间的讨论和如何命名, 参考 <em>名字空间</em> 一节.</li>
+</ul>
+<h2>枚举命名</h2>
+<ul>
+<li>枚举的命名应当和 <em>常量</em> 一致: <code>kEnumName</code> .</li>
+<li>
+<p>单独的枚举值应该采用 常量 &lt;constant-names&gt; 的命名方式. 枚举名 <code>UrlTableErrors</code> (以及 <code>AlternateUrlTableErrors</code>) 是类型, 所以要用大小写混合的方式.</p>
+<pre><code>enum UrlTableErrors
+{
+    kOK = 0,
+    kErrorOutOfMemory,
+    kErrorMalformedInput,
+};
+enum AlternateUrlTableErrors
+{
+    OK = 0,
+    OUT_OF_MEMORY = 1,
+    MALFORMED_INPUT = 2,
+};
+</code></pre>
+
+</li>
+</ul>
+<h2>宏命名</h2>
+<ul>
+<li>宏应该像这样命名: <code>MY_MACRO_THAT_SCARES_SMALL_CHILDREN</code>.</li>
+<li>参考 <em>预处理宏</em> ,	通常 <strong>不应该</strong> 使用 <em>宏</em>.</li>
+</ul>
+<h2>命名规则的特例</h2>
+<ul>
+<li>如果你欲命名的实体与已有 C/C++ 实体相似, 可参考现有命名策略.</li>
+</ul>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

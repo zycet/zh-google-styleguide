@@ -1,0 +1,590 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>classes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: 29d1c5bc36da364ad5aa86946d420b7bbc54a253 */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>类</h1>
+<pre><code>类是 C++ 中代码的基本单元. 显然, 它们被广泛使用.本节列举了在写一个类时的主要注意事项.
+</code></pre>
+
+<h2>构造函数的职责</h2>
+<pre><code>构造函数中只进行那些没什么意义的初始化, 如有需要另行使用 Init() 方法集中初始化有意义的数据.
+</code></pre>
+
+<dl>
+<dt>定义:</dt>
+<dd>在构造函数体中进行初始化操作.</dd>
+<dt>优点:</dt>
+<dd>排版方便, 无需担心类是否已经初始化.</dd>
+<dt>缺点:</dt>
+<dd>
+<p>在构造函数中执行操作引起的问题有:</p>
+<ul>
+<li>构造函数中很难上报错误, 不能使用异常.</li>
+<li>操作失败会造成对象初始化失败，进入不确定状态.</li>
+<li>如果在构造函数内调用了自身的虚函数,这类调用是不会重定向到子类的虚函数实现.即使当前没有子类化实现, 将来仍是隐患.</li>
+<li>如果有人创建该类型的全局变量 (虽然违背了上节提到的规则), 构造函数将先 <code>main()</code> 一步被调用,</li>
+</ul>
+</dd>
+<dt>结论:</dt>
+<dd>如果对象需要进行有意义的初始化, 考虑使用明确的<code>Init()</code> 函数并 (或) 增加一个成员标记用于指示对象是否已经初始化成功.</dd>
+</dl>
+<h2>默认构造函数</h2>
+<pre><code>如果一个类定义了若干成员变量又没有其它构造函数, 必须定义一个默认构造函数.
+否则编译器将自动生产一个很糟糕的默认构造函数.
+</code></pre>
+
+<dl>
+<dt>定义:</dt>
+<dd>
+<p><code>new</code> 一个不带参数的类对象时, 会调用这个类的默认构造函数. 用 <code>new[]</code>
+创建数组时，默认构造函数则总是被调用.</p>
+</dd>
+<dt>优点:</dt>
+<dd>默认将结构体初始化为 &quot;无效&quot; 值, 使调试更方便.</dd>
+<dt>缺点:</dt>
+<dd>对代码编写者来说, 这是多余的工作.</dd>
+<dt>结论:</dt>
+<dd>
+<p>如果类中定义了成员变量, 而且没有提供其它构造函数, 你必须定义一个(不带参数的) 默认构造函数.
+把对象的内部状态初始化成一致/有效的值无疑是更合理的方式.
+这么做的原因是: 如果你没有提供其它构造函数, 又没有定义默认构造函数,编译器将为你自动生成一个.
+编译器生成的构造函数并不会对对象进行合理的初始化.
+如果你定义的类继承现有类, 而你又没有增加新的成员变量, 则不需要为新类定义默认构造函数.</p>
+</dd>
+</dl>
+<h2>显式构造函数</h2>
+<pre><code>对单个参数的构造函数使用 C++ 关键字 `explicit`.
+</code></pre>
+
+<dl>
+<dt>定义:</dt>
+<dd>
+<p>通常, 如果构造函数只有一个参数, 可看成是一种隐式转换. 打个比方,
+如果你定义了 <code>Foo::Foo(string name)</code>, 接着把一个字符串传给一个以
+<code>Foo</code> 对象为参数的函数, 构造函数 <code>Foo::Foo(string name)</code> 将被调用,
+并将该字符串转换为一个 <code>Foo</code> 的临时对象传给调用函数. 看上去很方便,
+但如果你并不希望如此通过转换生成一个新对象的话, 麻烦也随之而来.
+为避免构造函数被调用造成隐式转换, 可以将其声明为 <code>explicit</code>.</p>
+</dd>
+<dt>优点:</dt>
+<dd>避免不合时宜的变换.</dd>
+<dt>缺点:</dt>
+<dd>无</dd>
+<dt>结论:</dt>
+<dd>
+<p>所有单参数构造函数都必须是显式的. 在类定义中, 将关键字 <code>explicit</code>
+加到单参数构造函数前: <code>explicit Foo(string name);</code></p>
+<p>例外: 在极少数情况下, 拷贝构造函数可以不声明成 <code>explicit</code>.
+作为其它类的透明包装器的类也是特例之一.
+类似的例外情况应在注释中明确说明.</p>
+</dd>
+</dl>
+<h2>3.4. 拷贝构造函数</h2>
+<pre><code>仅在代码中需要拷贝一个类对象的时候使用拷贝构造函数, 谨慎使用.
+大部分情况下都不需要, 此时应使用 `DISALLOW_COPY_AND_ASSIGN`.
+</code></pre>
+
+<dl>
+<dt>定义:</dt>
+<dd>拷贝构造函数在复制一个对象到新建对象时被调用 (特别是对象传值时).</dd>
+<dt>优点:</dt>
+<dd>拷贝构造函数使得拷贝对象更加容易. STL 容器要求所有内容可拷贝,可赋值.</dd>
+<dt>缺点:</dt>
+<dd>
+<p>C++ 中的隐式对象拷贝是很多性能问题和 bug 的根源.
+拷贝构造函数降低了代码可读性, 相比传引用, 跟踪传值的对象更加困难,对象修改的地方变得难以捉摸.</p>
+</dd>
+<dt>结论:</dt>
+<dd>
+<p>大部分类并不需要可拷贝, 也不需要一个拷贝构造函数或重载赋值运算符.
+不幸的是, 如果你不主动声明它们, 编译器会为你自动生成, 而且是<code>public</code> 的.
+可以考虑在类的 <code>private:</code> 中添加拷贝构造函数和赋值操作的空实现, 只有声明, 没有定义. 由于这些空函数声明为 <code>private</code>, 当其他代码试图使用它们的时候, 编译器将报错. 方便见, 我们可以使用 <code>DISALLOW_COPY_AND_ASSIGN</code> 宏:</p>
+<pre><code>// 禁止使用拷贝构造函数和 operator= 赋值操作的宏
+// 应该类的 private: 中使用
+#define DISALLOW_COPY_AND_ASSIGN(TypeName) 
+    TypeName(const TypeName&amp;);
+    void operator=(const TypeName&amp;)
+
+// 在 `class foo:` 中:
+class Foo
+{
+    public:
+        Foo(int f);
+        ~Foo();
+    private:
+        DISALLOW_COPY_AND_ASSIGN(Foo);
+};
+</code></pre>
+
+<p>如上所述, 绝大多数情况下都应使用 <code>DISALLOW_COPY_AND_ASSIGN</code> 宏.
+如果类确实需要可拷贝, 应在该类的头文件中说明原由,
+并合理的定义拷贝构造函数和赋值操作. 注意在 <code>operator=</code>
+中检测自我赋值的情况.
+为了能作为 STL 容器的值, 你可能有使类可拷贝的冲动.
+在大多数类似的情况下,真正该做的是把对象的 <em>指针</em> 放到 STL 容器中. 
+可以考虑使用<code>std::tr1::shared_ptr</code>.</p>
+</dd>
+</dl>
+<h2>3.6. 继承</h2>
+<pre><code>使用组合常常比使用继承更合理. 如果使用继承的话, 定义为 public 继承.
+</code></pre>
+
+<dl>
+<dt>定义:</dt>
+<dd>
+<p>当子类继承基类时, 子类包含了父基类所有数据及操作的定义. C++ 实践中,
+继承主要用于两种场合: 实现继承 (implementation inheritance),
+子类继承父类的实现代码; 接口继承 (interface inheritance),
+子类仅继承父类的方法名称.</p>
+</dd>
+<dt>优点:</dt>
+<dd>
+<p>实现继承通过原封不动的复用基类代码减少了代码量.
+由于继承是在编译时声明, 程序员和编译器都可以理解相应操作并发现错误.
+从编程角度而言, 接口继承是用来强制类输出特定的 API. 在类没有实现 API
+中某个必须的方法时, 编译器同样会发现并报告错误.</p>
+</dd>
+<dt>缺点:</dt>
+<dd>
+<p>对于实现继承, 由于子类的实现代码散布在父类和子类间之间,
+要理解其实现变得更加困难. 子类不能重写父类的非虚函数,
+当然也就不能修改其实现. 基类也可能定义了一些数据成员,
+还要区分基类的实际布局.</p>
+</dd>
+<dt>结论:</dt>
+<dd>
+<p>所有继承必须是 <code>public</code> 的. 如果你想使用私有继承,
+你应该替换成把基类的实例作为成员对象的方式.</p>
+<p>不要过度使用实现继承. 组合常常更合适一些. 尽量做到只在 &quot;是一个&quot;
+(&quot;is-a&quot;, YuleFox 注: 其他 &quot;has-a&quot; 情况下请使用组合)
+的情况下使用继承: 如果 <code>Bar</code> 的确 &quot;是一种&quot; Foo, <code>Bar</code> 才能继承
+<code>Foo</code>.</p>
+<p>必要的话, 析构函数声明为 <code>virtual</code>. 如果你的类有虚函数,
+则析构函数也应该为虚函数. 注意
+<a href="....">数据成员在任何情况下都必须是私有的</a>.</p>
+<p>当重载一个虚函数, 在衍生类中把它明确的声明为 <code>virtual</code>. 理论依据:
+如果省略 <code>virtual</code> 关键字, 代码阅读者不得不检查所有父类,
+以判断该函数是否是虚函数.</p>
+</dd>
+</dl>
+<h2>多重继承</h2>
+<pre><code>真正需要用到多重实现继承的情况少之又少.
+只在以下情况我们才允许多重继承: 
+最多只有一个基类是非抽象类, 其它基类都是以 `Interface` 为后缀的 纯接口类
+</code></pre>
+
+<dl>
+<dt>定义:</dt>
+<dd>多重继承允许子类拥有多个基类. 要将作为 <em>纯接口</em> 的基类和具有 <em>实现</em> 	的基类区别开来.</dd>
+<dt>优点:</dt>
+<dd>相比单继承, 多重实现继承可以复用更多的代码.</dd>
+<dt>缺点:</dt>
+<dd>多重实现继承看上去是不错的解决方案, 但你通常也可以找到一个更明确, 更清晰的不同解决方案.</dd>
+<dt>结论:</dt>
+<dd>
+<p>只有当所有父类除第一个外都是 纯接口类时,
+才允许使用多重继承. 为确保它们是纯接口, 这些类必须以 <code>Interface</code> 为后缀.</p>
+</dd>
+</dl>
+<h2>接口</h2>
+<pre><code>接口是指满足特定条件的类, 这些类以 `Interface` 为后缀 (不强制).
+</code></pre>
+
+<dl>
+<dt>定义:</dt>
+<dd>
+<p>当一个类满足以下要求时, 称之为纯接口:</p>
+<ul>
+<li>只有纯虚函数和静态函数 (除了下文提到的析构函数).</li>
+<li>没有非静态数据成员.</li>
+<li>没有定义任何构造函数. 如果有, 也不能带有参数, 并且必须为 <code>protected</code>.</li>
+<li>如果它是一个子类, 也只能从满足上述条件并以 <code>Interface</code> 为后缀的类继承.</li>
+</ul>
+<p>接口类不能被直接实例化, 因为它声明了纯虚函数.
+为确保接口类的所有实现可被正确销毁, 必须为之声明虚析构函数.</p>
+</dd>
+<dt>优点:</dt>
+<dd>
+<p>以 <code>Interface</code> 为后缀可以提醒其他人不要为该接口类增加函数实现或非静态数据成员.
+这一点对于多重继承尤其重要. 另外, 对于Java 程序员来说, 接口的概念已是深入人心.</p>
+</dd>
+<dt>缺点:</dt>
+<dd><code>Interface</code> 后缀增加了类名长度, 为阅读和理解带来不便.同时，接口特性作为实现细节不应暴露给用户.</dd>
+<dt>结论:</dt>
+<dd>只有在满足上述需要时, 类才以 <code>Interface</code> 结尾, 但反过来,满足上述需要的类未必一定以 <code>Interface</code> 结尾.</dd>
+</dl>
+<h2>运算符重载</h2>
+<ul>
+<li>除少数特定环境外，不要重载运算符.</li>
+</ul>
+<dl>
+<dt>定义:</dt>
+<dd>一个类可以定义诸如 <code>+</code> 和 <code>/</code> 等运算符,使其可以像内建类型一样直接操作.</dd>
+<dt>优点:</dt>
+<dd>
+<p>使代码看上去更加直观, 类表现的和内建类型 (如 <code>int</code>) 行为一致.
+重载运算符使 <code>Equals()</code>, <code>Add()</code> 等函数名黯然失色.
+为了使一些模板函数正确工作, 你可能必须定义操作符.</p>
+</dd>
+<dt>缺点:</dt>
+<dd>
+<p>虽然操作符重载令代码更加直观, 但也有一些不足:</p>
+<ul>
+<li>混淆视听, 让你误以为一些耗时的操作和操作内建类型一样轻巧.</li>
+<li>更难定位重载运算符的调用点, 查找 <code>Equals()</code> 显然比对应的 <code>==</code> 调用点要容易的多.</li>
+<li>有的运算符可以对指针进行操作, 容易导致 bug. <code>Foo + 4</code>做的是一件事, 而 <code>&amp;Foo + 4</code> 可能做的是完全不同的另一件事.对于二者, 编译器都不会报错, 使其很难调试.</li>
+<li>重载还有令你吃惊的副作用. 比如, 重载了 <code>operator&amp;</code> 的类不能被前置声明.</li>
+</ul>
+</dd>
+<dt>结论:</dt>
+<dd>
+<p>一般不要重载运算符. 尤其是赋值操作 (<code>operator=</code>) 比较诡异,应避免重载. 如果需要的话, 可以定义类似 <code>Equals()</code>, <code>CopyFrom()</code>等函数.</p>
+<p>然而, 极少数情况下可能需要重载运算符以便与模板或 &quot;标准&quot; C++ 类互操作(如 <code>operator&lt;&lt;(ostream&amp;, const T&amp;)</code>).
+只有被证明是完全合理的才能重载, 但你还是要尽可能避免这样做.
+尤其是不要仅仅为了在 STL 容器中用作键值就重载 <code>operator==</code> 或 <code>operator&lt;</code>; 相反, 你应该在声明容器的时候,
+创建相等判断和大小比较的仿函数类型.</p>
+<p>有些 STL 算法确实需要重载 <code>operator==</code> 时, 你可以这么做, 记得别忘了在文档中说明原因.</p>
+</dd>
+</dl>
+<h2>存取控制</h2>
+<ul>
+<li>
+<p>将 <em>所有</em> 数据成员声明为 <code>private</code>, 并根据需要提供相应的存取函数.</p>
+<p>例如, 某个名为 <code>foo</code> 的变量, 其取值函数是 <code>getFoo()</code>.
+还可能需要一个赋值函数 <code>setFoo()</code>.</p>
+</li>
+<li>一般在头文件中把存取函数定义成内联函数.</li>
+</ul>
+<h2>声明顺序</h2>
+<ul>
+<li>在类中使用特定的声明顺序: <code>public:</code> 在 <code>private:</code> 之前,</li>
+<li>成员函数在数据成员 (变量) 前;</li>
+<li>类的访问控制区段的声明顺序依次为: <code>public:</code>, <code>protected:</code>, <code>private:</code>.
+如果某区段没内容, 可以不声明.</li>
+<li>
+<p>每个区段内的声明通常按以下顺序:</p>
+<ul>
+<li><code>typedefs</code> 和枚举</li>
+<li>常量</li>
+<li>构造函数</li>
+<li>析构函数</li>
+<li>成员函数, 含静态成员函数</li>
+<li>数据成员, 含静态数据成员</li>
+</ul>
+</li>
+<li>
+<p>宏 <code>DISALLOW_COPY_AND_ASSIGN</code> 的调用放在 <code>private:</code> 区段的末尾.它通常是类的最后部分. 参考 拷贝构造函数 &lt;copy-constructors&gt;.</p>
+</li>
+<li><code>.cc</code> 文件中函数的定义应尽可能和声明顺序一致.</li>
+</ul>
+<h2>嵌套类</h2>
+<pre><code>仅仅当嵌套类只需在类内部使用时定义嵌套类, 因此其需被定义为`private:`, 除非它们是接口的一部分.
+</code></pre>
+
+<dl>
+<dt>定义:</dt>
+<dd>
+<p>在一个类内部定义另一个类; 嵌套类也被称为 <em>成员类 (member class)</em>.</p>
+<pre><code>class Foo
+{
+    private:
+        // Bar是嵌套在Foo中的成员类
+        class Bar
+        {
+            …
+        };
+};
+</code></pre>
+
+</dd>
+<dt>优点:</dt>
+<dd>
+<p>当嵌套 (或成员) 类只被外围类使用时非常有用;
+把它作为外围类作用域内的成员, 而不是去污染外部作用域的同名类.
+嵌套类可以在外围类中做前置声明, 然后在 <code>.cc</code> 文件中定义,
+这样避免在外围类的声明中定义嵌套类,
+因为嵌套类的定义通常只与实现相关.</p>
+</dd>
+<dt>缺点:</dt>
+<dd>
+<p>嵌套类只能在外围类的内部做前置声明. 因此, 任何使用了 <code>Foo::Bar*</code>
+指针的头文件不得不包含类 <code>Foo</code> 的整个声明.</p>
+</dd>
+<dt>结论:</dt>
+<dd>不要将嵌套类定义成公有, 除非它们是接口的一部分, 比如: 嵌套类含有某些方法的一组选项.</dd>
+</dl>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

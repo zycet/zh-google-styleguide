@@ -1,0 +1,568 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>others</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: 29d1c5bc36da364ad5aa86946d420b7bbc54a253 */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>其他 C++ 特性</h1>
+<h2>变长数组和 alloca()</h2>
+<pre><code>我们不允许使用变长数组和 `alloca()`.
+</code></pre>
+
+<dl>
+<dt>优点:</dt>
+<dd>变长数组具有浑然天成的语法. 变长数组和 <code>alloca()</code> 也都很高效.</dd>
+<dt>缺点:</dt>
+<dd>变长数组和 <code>alloca()</code> 不是标准 C++ 的组成部分. 更重要的是, 它们根据数据大小动态分配堆栈内存, 会引起难以发现的内存越界 bugs: &quot;在我的机器上运行的好好的, 发布后却莫名其妙的挂掉了&quot;.</dd>
+<dt>结论:</dt>
+<dd>使用安全的内存分配器, 如 <code>scoped_ptr</code> / <code>scoped_array</code>.</dd>
+</dl>
+<h2>友元</h2>
+<pre><code>由于其会导致过度的复杂化, 我们不允许使用友元.
+</code></pre>
+
+<h2>异常</h2>
+<pre><code>我们不使用 C++ 异常.
+</code></pre>
+
+<dl>
+<dt>优点:</dt>
+<dd>
+<ul>
+<li>
+<p>异常允许上层应用决定如何处理在底层嵌套函数中 &quot;不可能出现的&quot; 失败, 不像错误码记录那么含糊又易出错;</p>
+<p>-很多现代语言都使用异常. 引入异常使得 C++ 与 Python, Java 以及其它 C++ 相近的语言更加兼容.
+-许多第三方 C++ 库使用异常, 禁用异常将导致很难集成这些库.
+-异常是处理构造函数失败的唯一方法. 虽然可以通过工厂函数或 <code>Init()</code> 方法替代异常, 但他们分别需要堆分配或新的 &quot;无效&quot; 状态；
+-在测试框架中使用异常确实很方便.</p>
+</li>
+</ul>
+</dd>
+<dt>缺点:</dt>
+<dd>
+<ul>
+<li>
+在现有函数中添加 <code>throw</code> 语句时, 你必须检查所有调用点.
+所有调用点得至少有基本的异常安全保护, 否则永远捕获不到异常,
+只好 &quot;开心的&quot; 接受程序终止的结果. 例如, 如果 <code>f()</code> 调用了 <code>g()</code>,
+<code>g()</code> 又调用了 <code>h()</code>, <code>h</code> 抛出的异常被 <code>f</code> 捕获, <code>g</code> 要当心了, 很可能会因疏忽而未被妥善清理.
+</li>
+<li>
+更普遍的情况是, 如果使用异常, 光凭查看代码是很难评估程序的控制流:
+函数返回点可能在你意料之外. 这回导致代码管理和调试困难.
+你可以通过规定何时何地如何使用异常来降低开销,
+但是让开发人员必须掌握并理解这些规定带来的代价更大.
+</li>
+<li>
+异常安全要求同时采用 RAII 和不同编程实践.
+要想轻松编写正确的异常安全代码, 需要大量的支撑机制配合. 另外,
+要避免代码读者去理解整个调用结构图,
+异常安全代码必须把写持久化状态的逻辑部分隔离到 &quot;提交&quot; 阶段.
+它在带来好处的同时, 还有成本 (也许你不得不为了隔离 &quot;提交&quot; 	而整出令人费解的代码).
+允许使用异常会驱使我们不断为此付出代价,
+即使我们觉得这很不划算.
+</li>
+<li>
+<p>启用异常使生成的二进制文件体积变大, 延长了编译时间
+(或许影响不大), 还可能增加地址空间压力;</p>
+</li>
+<li>
+<p>异常的实用性可能会怂恿开发人员在不恰当的时候抛出异常,
+或者在不安全的地方从异常中恢复. 例如,
+处理非法用户输入时就不应该抛出异常. 如果我们要完全列出这些约束,
+这份风格指南会长出很多!</p>
+</li>
+</ul>
+</dd>
+<dt>结论:</dt>
+<dd>
+<p>从表面上看, 使用异常利大于弊, 尤其是在新项目中. 但是对于现有代码,
+引入异常会牵连到所有相关代码. 如果新项目允许异常向外扩散,
+在跟以前未使用异常的代码整合时也将是个麻烦. 因为 Google 现有的大多数
+C++ 代码都没有异常处理, 引入带有异常处理的新代码相当困难.</p>
+<p>鉴于 Google 现有代码不接受异常,
+在现有代码中使用异常比在新项目中使用的代价多少要大一些.
+迁移过程比较慢, 也容易出错. 我们不相信异常的使用有效替代方案,
+如错误代码, 断言等会造成严重负担.</p>
+<p>我们并不是基于哲学或道德层面反对使用异常, 而是在实践的基础上.
+我们希望在 Google 使用我们自己的开源项目,
+但项目中使用异常会为此带来不便, 因此我们也建议不要在 Google
+的开源项目中使用异常. 如果我们需要把这些项目推倒重来显然不太现实.</p>
+<p>对于 Windows 代码来说, 有个 特例.</p>
+</dd>
+</dl>
+<h2>运行时类型识别</h2>
+<pre><code>我们禁止使用 RTTI.
+</code></pre>
+
+<dl>
+<dt>定义:</dt>
+<dd>RTTI 允许程序员在运行时识别 C++ 类对象的类型.</dd>
+<dt>优点:</dt>
+<dd>
+<p>RTTI 在某些单元测试中非常有用. 比如进行工厂类测试时,
+用来验证一个新建对象是否为期望的动态类型.</p>
+<p>除测试外, 极少用到.</p>
+</dd>
+<dt>缺点:</dt>
+<dd>
+<p>在运行时判断类型通常意味着设计问题.
+如果你需要在运行期间确定一个对象的类型,
+这通常说明你需要考虑重新设计你的类.</p>
+</dd>
+<dt>结论:</dt>
+<dd>
+<p>除单元测试外, 不要使用 RTTI.
+如果你发现自己不得不写一些行为逻辑取决于对象类型的代码,
+考虑换一种方式判断对象类型.</p>
+<p>如果要实现根据子类类型来确定执行不同逻辑代码, 虚函数无疑更合适.
+在对象内部就可以处理类型识别问题.</p>
+<p>如果要在对象外部的代码中判断类型, 考虑使用双重分派方案,
+如访问者模式. 可以方便的在对象本身之外确定类的类型.</p>
+<p>如果你认为上面的方法你真的掌握不了, 你可以使用 RTTI, 但务必请三思
+:-) . 不要试图手工实现一个貌似 RTTI 的替代方案, 我们反对使用 RTTI
+的理由, 同样适用于那些在类型继承体系上使用类型标签的替代方案.</p>
+</dd>
+</dl>
+<h2>类型转换</h2>
+<pre><code>使用 C++ 的类型转换, 如 `static_cast&lt;&gt;()`.
+不要使用 `int y = (int)x` 或 `int y = int(x)` 等转换方式;
+</code></pre>
+
+<dl>
+<dt>定义:</dt>
+<dd>C++ 采用了有别于 C 的类型转换机制, 对转换操作进行归类.</dd>
+<dt>优点:</dt>
+<dd>C 语言的类型转换问题在于模棱两可的操作; 有时是在做强制转换 (如<code>(int)3.5</code>), 有时是在做类型转换 (如 <code>(int)&quot;hello&quot;</code>). 另外, C++ 的类型转换在查找时更醒目.</dd>
+<dt>缺点:</dt>
+<dd>恶心的语法.</dd>
+<dt>结论:</dt>
+<dd>
+<p>不要使用 C 风格类型转换. 而应该使用 C++ 风格.</p>
+<ul>
+<li>
+用 <code>static_cast</code> 替代 C 风格的值转换,
+或某个类指针需要明确的向上转换为父类指针时.
+</li>
+<li>用 <code>const_cast</code> 去掉 <code>const</code> 限定符.</li>
+<li>
+用 <code>reinterpret_cast</code> 指针类型和整型或其它指针之间进行不安全的相互转换.
+仅在你对所做一切了然于心时使用.
+</li>
+<li><code>dynamic_cast</code> 测试代码以外不要使用. 除非是单元测试.</li>
+</ul>
+</dd>
+</dl>
+<h2>流</h2>
+<pre><code>只在记录日志时使用流.
+</code></pre>
+
+<dl>
+<dt>定义:</dt>
+<dd>流用来替代 <code>printf()</code> 和 <code>scanf()</code>.</dd>
+<dt>优点:</dt>
+<dd>
+<p>有了流, 在打印时不需要关心对象的类型.
+不用担心格式化字符串与参数列表不匹配 (虽然在 gcc 中使用 <code>printf</code>
+也不存在这个问题). 流的构造和析构函数会自动打开和关闭对应的文件.</p>
+</dd>
+<dt>缺点:</dt>
+<dd>
+<p>流使得 <code>pread()</code> 等功能函数很难执行. 如果不使用 <code>printf</code>
+风格的格式化字符串, 某些格式化操作 (尤其是常用的格式字符串 <code>%.*s</code>)
+用流处理性能是很低的. 流不支持字符串操作符重新排序 (%1s),
+而这一点对于软件国际化很有用.</p>
+</dd>
+<dt>结论:</dt>
+<dd>
+<p>不要使用流, 除非是日志接口需要. 使用 <code>printf</code> 之类的代替.</p>
+<p>使用流还有很多利弊, 但代码一致性胜过一切. 不要在代码中使用流.</p>
+</dd>
+</dl>
+<h2><code>const</code> 的使用</h2>
+<pre><code>我们强烈建议你在任何可能的情况下都要使用 `const`.
+</code></pre>
+
+<dl>
+<dt>定义:</dt>
+<dd>
+<p>在声明的变量或参数前加上关键字 <code>const</code> 用于指明变量值不可被篡改 (如
+<code>const int foo</code> ). 为类中的函数加上 <code>const</code>
+限定符表明该函数不会修改类成员变量的状态 (如
+<code>class Foo { int Bar(char c) const; };</code>).</p>
+</dd>
+<dt>优点:</dt>
+<dd>
+<p>大家更容易理解如何使用变量. 编译器可以更好地进行类型检测, 相应地,
+也能生成更好的代码. 人们对编写正确的代码更加自信,
+因为他们知道所调用的函数被限定了能或不能修改变量值.
+即使是在无锁的多线程编程中, 人们也知道什么样的函数是安全的.</p>
+</dd>
+<dt>缺点:</dt>
+<dd>
+<p><code>const</code> 是入侵性的: 如果你向一个函数传入 <code>const</code> 变量,
+函数原型声明中也必须对应 <code>const</code> 参数 (否则变量需要 <code>const_cast</code>
+类型转换), 在调用库函数时显得尤其麻烦.</p>
+</dd>
+<dt>结论:</dt>
+<dd>
+<p><code>const</code> 变量, 数据成员, 函数和参数为编译时类型检测增加了一层保障;
+便于尽早发现错误. 因此, 我们强烈建议在任何可能的情况下使用 <code>const</code>:</p>
+<ul>
+<li>如果函数不会修改传入的引用或指针类型参数, 该参数应声明为 <code>const</code>.</li>
+<li>
+尽可能将函数声明为 <code>const</code>. 访问函数应该总是 <code>const</code>.
+其他不会修改任何数据成员, 未调用非 <code>const</code> 函数,
+不会返回数据成员非 <code>const</code> 指针或引用的函数也应该声明成 <code>const</code>.
+</li>
+<li>如果数据成员在对象构造之后不再发生变化, 可将其定义为 <code>const</code>.</li>
+</ul>
+<p>然而, 也不要发了疯似的使用 <code>const</code>. 像 <code>const int * const * const x;</code> 就有些过了, 虽然它非常精确的描述了常量 <code>x</code>. 关注真正有帮助意义的信息: 前面的例子写成 <code>const int** x</code> 就够了.</p>
+</dd>
+<dt><code>const</code> 的位置:</dt>
+<dd>
+<p>有人喜欢 <code>int const *foo</code> 形式, 不喜欢 <code>const int* foo</code>,
+他们认为前者更一致因此可读性也更好: 遵循了 <code>const</code>
+总位于其描述的对象之后的原则. 但是一致性原则不适用于此,
+&quot;不要过度使用&quot; 的声明可以取消大部分你原本想保持的一致性. 将 <code>const</code>
+放在前面才更易读, 因为在自然语言中形容词 (<code>const</code>) 是在名词 (<code>int</code>)
+之前.</p>
+<p>这是说, 我们提倡但不强制 <code>const</code> 在前. 但要保持代码的一致性!</p>
+</dd>
+</dl>
+<h2>0 和 NULL</h2>
+<pre><code>整数用 `0`, 实数用 `0.0`, 指针用 `NULL`, 字符 (串) 用 `'\0'`.
+</code></pre>
+
+<p>整数用 <code>0</code>, 实数用 <code>0.0</code>, 这一点是毫无争议的.</p>
+<p>对于指针 (地址值), 到底是用 <code>0</code> 还是 <code>NULL</code>, Bjarne Stroustrup 建议使用最原始的 <code>0</code>.
+我们建议使用看上去像是指针的 <code>NULL</code>. </p>
+<p>事实上一些 C++ 编译器 (如 gcc 4.1.0) 对 <code>NULL</code> 进行了特殊的定义, 可以给出有用的警告信息, 尤其是 <code>sizeof(NULL)</code> 和 <code>sizeof(0)</code> 不相等的情况.</p>
+<p>字符 (串) 用 <code>'\0'</code>, 不仅类型正确而且可读性好.</p>
+<h2>sizeof</h2>
+<pre><code>尽可能用 `sizeof(varname)` 代替 `sizeof(type)`.
+</code></pre>
+
+<ul>
+<li>使用 <code>sizeof(varname)</code> 是因为当代码中变量类型改变时会自动更新. 某些情况下 <code>sizeof(type)</code> 或许有意义, 但还是要尽量避免, 因为它会导致变量类型改变后不能同步.</li>
+</ul>
+<h2>assert断言</h2>
+<dl>
+<dt>定义:</dt>
+<dd>断言是用来在运行时判断程序是否按照预定的逻辑运行(主要在 <code>Debug</code> 配置下), 其会在不达成条件时抛出调试信息, 并终止程序运行.</dd>
+<dt>优点:</dt>
+<dd>
+<p>其可以方便程序调试, 在中断时可以提供较多的有效信息, 从而便于修正.
+在定义 <code>NDEBUG</code> 宏后会被忽略, 因此其在 <code>Release</code> 版本中不执行也不会产生任何对性能的不良影响.</p>
+</dd>
+<dt>缺点:</dt>
+<dd>其实质是函数宏, 在C++中并不提倡使用.</dd>
+<dt>结论:</dt>
+<dd>
+<p>建议在函数输入参数易参数错误时采用 <code>assert</code> 对输入参数及输出进行判断, 这样易于定位错误.
+在 <code>Release</code> 版中定义<code>NDEBUG</code> 宏, 使其失效.</p>
+</dd>
+</dl>
+<h2>智能指针</h2>
+<pre><code>如果确实需要使用智能指针的话, `scoped_ptr` 完全可以胜任.
+你应该只在非常特定的情况下使用 `std::tr1::shared_ptr`, 例如 STL
+容器中的对象. 任何情况下都不要使用 `auto_ptr`.
+</code></pre>
+
+<p>&quot;智能&quot; 指针看上去是指针, 其实是附加了语义的对象. 以 <code>scoped_ptr</code> 为例,
+<code>scoped_ptr</code> 被销毁时, 它会删除所指向的对象. <code>shared_ptr</code> 也是如此,
+并且 <code>shared_ptr</code> 实现了引用计数, 所以最后一个 <code>shared_ptr</code> 对象析构时,
+如果检测到引用次数为 0，就会销毁所指向的对象.</p>
+<p>一般来说，我们倾向于设计对象隶属明确的代码,最明确的对象隶属是根本不使用指针,
+直接将对象作为一个作用域或局部变量使用. 另一种极端做法是,引用计数指针不属于任何对象.
+这种方法的问题是容易导致循环引用, 或者导致某个对象无法删除的诡异状态, 而且在每一次拷贝或赋值时连原子操作都会很慢.</p>
+<p>虽然不推荐使用引用计数指针, 但有些时候它们的确是最简单有效的解决方案.</p>
+<h2>宏</h2>
+<ul>
+<li>使用宏时要非常谨慎, 尽量以内联函数, 枚举和常量代替之.</li>
+<li>宏意味着你和编译器看到的代码是不同的. 这可能会导致异常行为, 尤其因为宏具有全局作用域.</li>
+<li>值得庆幸的是, C++ 中, 宏不像在 C 中那么必不可少. 以往用宏展开性能关键的代码, 现在可以用内联函数替代. 用宏表示常量可被<code>const</code> 变量代替. 用宏 &quot;缩写&quot; 长变量名可被引用代替. 用宏进行条件编译...这个, 千万别这么做, 会令测试更加痛苦 (<code>#define</code> 防止头文件重包含当然是个特例).</li>
+<li>宏可以做一些其他技术无法实现的事情, 在一些代码库 (尤其是底层库中) 可以看到宏的某些特性 (如用 <code>#</code> 字符串化, 用 <code>##</code> 连接等等). 但在使用前, 仔细考虑一下能不能不使用宏达到同样的目的.</li>
+<li>
+<p>下面给出的用法模式可以避免使用宏带来的问题; 如果你要宏, 尽可能遵守:</p>
+<ul>
+<li>不要在 <code>.h</code> 文件中定义宏.</li>
+<li>在马上要使用时才进行 <code>#define</code>, 使用后要立即 <code>#undef</code>.</li>
+<li>不要只是对已经存在的宏使用#undef，选择一个不会冲突的名称；</li>
+<li>不要试图使用展开后会导致 C++ 构造不稳定的宏.</li>
+</ul>
+</li>
+</ul>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

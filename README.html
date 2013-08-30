@@ -1,0 +1,425 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>readme</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: 29d1c5bc36da364ad5aa86946d420b7bbc54a253 */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>Google开源项目风格指南 (中文版,ITR组内修改版)</h1>
+<h2>编写说明</h2>
+<ul>
+<li>本项目修改自<a href="http://zh-google-styleguide.readthedocs.org">Google开源项目风格指南(中文版)</a>,原文档采用reStructuredText格式,本项目转换为Markdown格式.</li>
+<li>在这里感谢 <a href="http://www.yulefox.com">YuleFox</a>和<a href="http://www.yangyubo.com">brantyoung</a>的杰出工作，当然还有伟大的<a href="http://www.google.com">Google</a>.</li>
+<li>此文档用于ITR组内部C++项目开发用，所有C++相关编码均须按照此文档要求执行.</li>
+<li>项目文件托管在<a href="https://github.com/zh-google-styleguide/zh-google-styleguide">Gitbub</a>.</li>
+<li>Markdown格式<a href="http://www.xdays.info/markdown官方文档.html">语法说明</a>.</li>
+<li>Markdown格式<a href="markdownsyntaxlist.txt">标记列表</a>.</li>
+<li>如有任何疑问请联系<a href="m&#x61;i&#108;&#x74;o&#x3a;&#x7a;&#x79;&#x63;&#x65;&#116;&#x40;1&#x32;&#x36;&#x2e;&#x63;&#x6f;&#109;">&#25991;&#x6863;编&#20889;&#x8005;</a>.</li>
+<li>与原始版本一致此修改版,使用<em>Artistic License/GPL</em>开源许可.</li>
+</ul>
+<h2>指南说明</h2>
+<ul>
+<li>Google 经常会发布一些开源项目, 意味着会接受来自其他代码贡献者的代码. 但是如果代码贡献者的编程风格与 Google 的不一致, 会给代码阅读者和其他代码提交这造成不小的困扰. Google 因此发布了这份自己的编程风格, 使所有提交代码的人都能获知 Google 的编程风格.</li>
+<li>规则的作用就是避免混乱. 但规则本身一定要权威, 有说服力, 并且是理性的. 我们所见过的大部分编程规范, 其内容或不够严谨, 或阐述过于简单, 或带有一定的武断性.</li>
+<li>Google 保持其一贯的严谨精神, 5 万汉字的指南涉及广泛, 论证严密. 我们翻译该系列指南的主因也正是其严谨性. 严谨意味着指南的价值不仅仅局限于它罗列出的规范, 更具参考意义的是它为了列出规范而做的谨慎权衡过程.</li>
+<li>指南不仅列出你要怎么做, 还告诉你为什么要这么做, 哪些情况下可以不这么做, 以及如何权衡其利弊. 其他团队未必要完全遵照指南亦步亦趋, 如前面所说, 这份指南是 Google 根据自身实际情况打造的, 适用于其主导的开源项目. 其他团队可以参照该指南, 或从中汲取灵感, 建立适合自身实际情况的规范.</li>
+<li>C++ 是 Google 大部分开源项目的主要编程语言. 正如每个 C++ 程序员都知道的, C++ 有很多强大的特性, 但这种强大不可避免的导致它走向复杂，使代码更容易产生 bug, 难以阅读和维护.</li>
+<li>本指南的目的是通过详细阐述 C++ 注意事项来驾驭其复杂性. 这些规则在保证代码易于管理的同时, 高效使用 C++ 的语言特性.</li>
+<li><em>风格</em>, 亦被称作可读性, 也就是指导 C++ 编程的约定. 使用术语 “风格” 有些用词不当, 因为这些习惯远不止源代码文件格式化这么简单.</li>
+<li>使代码易于管理的方法之一是加强代码一致性. 让任何程序员都可以快速读懂你的代码这点非常重要. 保持统一编程风格并遵守约定意味着可以很容易根据 “模式匹配” 规则来推断各种标识符的含义. 创建通用, 必需的习惯用语和模式可以使代码更容易理解. 在一些情况下可能有充分的理由改变某些编程风格, 但我们还是应该遵循一致性原则，尽量不这么做.</li>
+<li>本指南的另一个观点是 C++ 特性的臃肿. C++ 是一门包含大量高级特性的庞大语言. 某些情况下, 我们会限制甚至禁止使用某些特性. 这么做是为了保持代码清爽, 避免这些特性可能导致的各种问题. 指南中列举了这类特性, 并解释为什么这些特性被限制使用.</li>
+<li>注意: 本指南并非 C++ 教程, 我们假定读者已经对 C++ 非常熟悉.</li>
+<li>随此指南同步提供了修改后的cpplint代码校验脚本及代码示例模板.</li>
+</ul>
+<h2>目录</h2>
+<ul>
+<li>
+<a href="naming.html">命名</a>
+<ul>
+<li>通用规则（类型、变量、函数）</li>
+<li>文件命名</li>
+<li>类型命名</li>
+<li>变量命名</li>
+<li>常量命名</li>
+<li>函数命名</li>
+<li>名字空间命名</li>
+<li>枚举命名</li>
+<li>命名特例</li>
+</ul>
+</li>
+<li>
+<a href="headers.html">头文件</a>
+<ul>
+<li>#define保护</li>
+<li>头文件依赖</li>
+<li>#include路径及顺序</li>
+</ul>
+</li>
+<li>
+<a href="scoping.html">作用域</a>
+<ul>
+<li>局部变量</li>
+<li>静态变量、全局变量</li>
+</ul>
+</li>
+<li>
+<a href="funcations.html">函数</a>
+<ul>
+<li>函数参数</li>
+<li>函数重载</li>
+<li>缺省参数</li>
+<li>内联函数</li>
+<li>非成员函数、静态成员函数、全局函数</li>
+<li>编写简短函数</li>
+</ul>
+</li>
+<li>
+<a href="structures.html">结构体</a>
+<ul>
+<li>不定义除成员变量外的任何内容</li>
+<li>typedef代码样例</li>
+<li>不使用嵌套结构体</li>
+</ul>
+</li>
+<li>
+<a href="classes.html">类</a>
+<ul>
+<li>构造函数的职责</li>
+<li>默认构造函数</li>
+<li>显式构造函数</li>
+<li>拷贝构造函数</li>
+<li>结构体VS类</li>
+<li>继承</li>
+<li>多重继承</li>
+<li>接口</li>
+<li>运算符重载</li>
+<li>存取控制</li>
+<li>声明顺序</li>
+<li>嵌套类</li>
+</ul>
+</li>
+<li>
+<a href="comments.html">注释</a>
+<ul>
+<li>注释风格</li>
+<li>文件注释</li>
+<li>类注释</li>
+<li>函数注释</li>
+<li>变量注释</li>
+<li>实现注释</li>
+<li>标点、拼写、语法</li>
+<li>TODO注释</li>
+</ul>
+</li>
+<li>
+<a href="others.html">其他特性</a>
+<ul>
+<li>变长数组和alloca()函数</li>
+<li>友元</li>
+<li>异常</li>
+<li>运行时类型识别</li>
+<li>类型转换</li>
+<li>流</li>
+<li>const</li>
+<li>NULL和0</li>
+<li>sizeof()</li>
+<li>assert使用</li>
+<li>智能指针</li>
+<li>宏</li>
+<li>类型</li>
+</ul>
+</li>
+<li>
+<a href="formatting.html">格式</a>
+<ul>
+<li>cpplint</li>
+<li>行长度</li>
+<li>非ASCII字符</li>
+<li>空格和制表符</li>
+<li>函数声明与定义</li>
+<li>函数调用</li>
+<li>条件语句</li>
+<li>循环和开关选择语句</li>
+<li>指针和引用表达式</li>
+<li>布尔表达式</li>
+<li>函数返回值</li>
+<li>变量及数组初始化</li>
+<li>预处理指令</li>
+<li>类格式</li>
+<li>名字空间</li>
+<li>水平留白</li>
+</ul>
+</li>
+</ul>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
